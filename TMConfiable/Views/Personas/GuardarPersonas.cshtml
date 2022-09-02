@@ -1,0 +1,54 @@
+﻿@model PersonasModel
+@{
+    ViewData["Title"] = "GuardarPersonas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        Datos Persona
+    </div>
+    <div class="card-body">
+
+        <form asp-action="GuardarPersonas" asp-controller="Personas" method="post">
+            <div class="mb-3">
+                <label class="form-label">Documento de identificación</label>
+                <input asp-for = "DocIdentificacion" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nombres</label>
+                <input asp-for = "Nombres" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Apellidos</label>
+                <input asp-for = "Apellidos" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Correo electrónico</label>
+                <input asp-for = "Email" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rol</label>
+                <input asp-for = "Rol" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Credencial</label>
+                <input asp-for = "Credencial" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nivel Educativo</label>
+                <input asp-for = "NivelEducativo" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Ciudad Direccion</label>
+                <input asp-for = "CiudadDireccion" type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar datos</button>
+            <a>Volver a la lista</a>
+        </form>
+
+
+
+    </div>
+</div>
+
